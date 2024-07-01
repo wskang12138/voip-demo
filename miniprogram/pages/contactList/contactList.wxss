@@ -1,0 +1,14 @@
+.call-options {
+  display: flex
+}
+
+.call-options image {
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+  padding: 5px;
+}
+
+.weui-cell__hd {
+  min-width: 120px;
+}

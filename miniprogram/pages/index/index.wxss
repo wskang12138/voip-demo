@@ -1,0 +1,14 @@
+button {
+  padding: 10px;
+  height: fit-content;
+  margin-top: 16px;
+}
+
+.auth .weui-cell__hd {
+  min-width: 80px;
+}
+
+.qr-code-img {
+  width: 150px;
+  height: 150px;
+}

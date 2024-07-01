@@ -1,0 +1,33 @@
+<mp-cells title="基础信息">
+  <mp-cell title="小程序版本" value="{{envVersion}}"></mp-cell>
+  <mp-cell title="当前环境" value="{{isWmpf ? 'WMPF' : 'WeChat'}}"></mp-cell>
+  <mp-cell title="设备 SN" wx:if="{{isWmpf}}" value="{{sn}}" link bind:tap="gotoAuth">
+    <view slot="footer">授权新用户</view>
+  </mp-cell>
+</mp-cells>
+
+<mp-cells title="呼叫设置">
+  <mp-cell title="接口类型" link>
+    <block>
+        <picker range="{{apiTypesValid}}" model:value="{{apiTypeIndex}}" slot="footer" >
+          {{apiTypesValid[apiTypeIndex]}}
+        </picker>
+    </block>
+  </mp-cell>
+</mp-cells>
+
+
+
+<mp-cells title="呼叫{{isWmpf ? '微信用户' : '设备'}}">
+  <block wx:if="{{contactList.length > 0}}">
+    <mp-cell wx:for="{{contactList}}" wx:key="openid" title="{{item.name}}">
+      <view slot="footer" class="call-options">
+        <image src="../assets/video.svg" class="call-type-icon" bind:tap="call" data-idx="{{index}}" data-type="video" />
+        <image src="../assets/phone.svg" class="call-type-icon" bind:tap="call" data-idx="{{index}}" data-type="voice" />
+      </view>
+    </mp-cell>
+  </block>
+  <block wx:else="">
+    <mp-cell title="暂无可呼叫的{{isWmpf ? '微信用户' : '设备'}}"></mp-cell>
+  </block>
+</mp-cells>

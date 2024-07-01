@@ -1,0 +1,5 @@
+<view>
+  <view>Version: Finish</view>
+  <button style="width: 80%; margin-top: 30rpx;" bind:tap="authVoIP">VoIP授权</button>
+  <button style="width: 80%; margin-top: 30rpx;" bind:tap="startCommunication">发起通话</button>
+</view>

@@ -1,0 +1,24 @@
+{
+  "plugins": {
+    "wmpf-voip": {
+      "version": "latest",
+      "provider": "wxf830863afde621eb"
+    }
+  },
+  "pages": [
+    "pages/index/index",
+    "pages/contactList/contactList"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "componentFramework": "glass-easel",
+  "useExtendedLib": {
+    "weui": true
+  }
+}

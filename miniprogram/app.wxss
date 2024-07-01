@@ -1,0 +1,148 @@
+/**app.wxss**/
+view,
+text,
+image,
+button,
+input,
+scroll-view {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-row-between {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-item-1 {
+  flex: 1;
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.h36 {
+  height: 36px;
+  line-height: 36px;
+}
+
+.h40 {
+  height: 40px;
+  line-height: 40px;
+}
+
+.h48 {
+  height: 48px;
+  line-height: 48px;
+}
+
+.h-58 {
+  height: 58px;
+  line-height: 58px;
+}
+
+.font-17 {
+  font-size: 17px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-black-5 {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.font-white {
+  color: white;
+}
+
+.font-green {
+  color: #06ae56;
+}
+
+.bg-green {
+  background-color: #07c160;
+}
+
+.bg-gray {
+  background-color: #f2f2f2;
+}
+
+.padding-32 {
+  padding: 32px;
+}
+
+.margin-col-16 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.margin-top-16 {
+  margin-top: 16px;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+.margin-bottom-8 {
+  margin-bottom: 8px;
+}
+
+.z-index1 {
+  z-index: 1;
+}
+
+.z-index3 {
+  z-index: 3;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.line-6 {
+  width: 100%;
+  height: 6px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
